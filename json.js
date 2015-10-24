@@ -19,7 +19,7 @@ $(document).ready(function(){
 $.getJSON("http://www.reddit.com/r/aww/.json?jsonp=?", function(data) {
 	    $.each(data.data.children, function(i,item){
 	        //$("<img/>").attr("src", item.data.url).appendTo(".container");
-	        $(".container")append("<div class='col-md-4'><img src='"+  item.data.url +"'/></div>" )
+	        $(".container").append("<div class='col-md-4'><img src='"+  item.data.url +"'/></div>" )
 	    });
 	    });
 
